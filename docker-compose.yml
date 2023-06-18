@@ -5,3 +5,4 @@ services:
     build: ./flaskapp-docker
     ports:
       - "80"
+    network_mode: host
