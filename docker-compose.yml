@@ -1,7 +1,13 @@
 version: '3'
-
 services:
   flaskapp:
-    build: ./flaskapp-docker
+    build: .
     ports:
-      - "8080:80"
+      - "5000:5000"
+    networks:
+      - bridge
+
+networks:
+  bridge:
+    driver: bridge
+
